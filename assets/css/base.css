@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #EE4D2D;
+    --primary-color-rgba: rgb(238,75,43);
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6em;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.btn  {
+
+}
+
+.grid {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__max-width {
+    width: 100%;
+}
+
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* ANIMATION */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* MODALS */
+
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    display: flex;
+}
+
+
+.modal__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2)
+}
+
+.modal__body {
+   /*  position: relative;    cách 1 center
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    margin: auto;             /*cách 2 khi sử dụng display flex*/
+    background-color:#fff;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+/*  AUTHEN MODAL */
+
+.auth-form {
+    width: 500px;
+}
+
+.auth-form__container {
+    padding: 0 32px;
+}
+
+.auth-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth-form-header__left {
+    font-size: 2.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.auth-form-header__right {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.auth-form__form {
+    margin-top: 16px;
+}
+
+.auth-form__group {
+
+}
+
+.auth-form__input {
+
+}
+
+.auth-form__aside {
+
+}
+
+.auth-form__policy-link {
+
+}
+
+.auth-form__controls {
+
+}
+
+.auth-form__socials {
+
+}
+
