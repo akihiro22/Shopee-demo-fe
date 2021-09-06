@@ -4,6 +4,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --border-color: #dbdbdb;
 }
 
 * {
@@ -18,7 +19,7 @@ html {
 }
 
 .btn  {
-
+    line-height: 1.6rem;
 }
 
 .grid {
@@ -73,64 +74,44 @@ html {
     transform: translate(-50%, -50%); */
     margin: auto;             /*cách 2 khi sử dụng display flex*/
     background-color:#fff;
-    border-radius: 5px;
     z-index: 2;
+    border-radius:2px;
 }
+/* Button style */
 
-/*  AUTHEN MODAL */
-
-.auth-form {
-    width: 500px;
-}
-
-.auth-form__container {
-    padding: 0 32px;
-}
-
-.auth-form-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.auth-form-header__left {
-    font-size: 2.2rem;
-    font-weight: 400;
-    color: var(--text-color);
-}
-
-.auth-form-header__right {
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: var(--primary-color);
+.btn {
+    min-width: 142px;
+    height: 36px;
+    text-decoration: none;
+    border:none;
+    border-radius:2px;
+    font-size:1.3rem;
+    padding: 0;
+    outline:none;
     cursor: pointer;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.auth-form__form {
-    margin-top: 16px;
+.btn:hover {
+    background-color: rgba(0,0,0,0.2)
 }
 
-.auth-form__group {
-
+.btn.btn--primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
 }
 
-.auth-form__input {
-
+.btn.btn--disable {
+    cursor: default;
+    color: #949494;
+    background-color:#999;
 }
 
-.auth-form__aside {
-
+.btn.btn--size-sm {
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
 }
-
-.auth-form__policy-link {
-
-}
-
-.auth-form__controls {
-
-}
-
-.auth-form__socials {
-
-}
-
